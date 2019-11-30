@@ -1,0 +1,343 @@
+
+
+
+-----
+sample1
+-----
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .my-ul {
+            /* list-style-type:lower-roman; */
+            /* list-style-position:outside; */
+            list-style: inside lower-alpha;
+            list-style-image: url('./bullet.gif');
+        }
+
+        .my-ul>li {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="my-ul">
+        <li>This Is Some Text Here We Are Using For Example</li>
+        <li>This Is Some Text Here We Are Using For Example</li>
+        <li>This Is Some Text Here We Are Using For Example</li>
+        <li>This Is Some Text Here We Are Using For Example</li>
+        <li>This Is Some Text Here We Are Using For Example</li>
+    </ul>
+
+    
+
+</body>
+
+</html>
+
+-----
+sample2
+-----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            color: #111111;
+        }
+
+        table {
+            width: 600px;
+        }
+
+        th,
+        td {
+            padding: 7px 10px 10px 10px;
+        }
+
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 90%;
+            border-bottom: 2px solid #111111;
+            border-top: 1px solid #999;
+            text-align: left;
+        }
+
+        tr.even {
+            background-color: #efefef;
+        }
+
+        tr:hover {
+            background-color: #c3e6e5;
+        }
+
+        .money {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First Edition Auctions</h1>
+    <table>
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th class="money">Reserve Price</th>
+            <th class="money">Current Bid</th>
+        </tr>
+        <tr>
+            <td>E.E. Cummings</td>
+            <td>Tulips & Chimneys</td>
+            <td class="money">$2,000.00</td>
+            <td class="money">$2,642.50</td>
+        </tr>
+        <tr class="even">
+            <td>Charles d'Orleans</td>
+            <td>Poemes</td>
+            <td class="money"></td>
+            <td class="money">$5,866.00</td>
+        </tr>
+        <tr>
+            <td>T.S. Eliot</td>
+            <td>Poems 1909 - 1925</td>
+            <td class="money">$1,250.00</td>
+            <td class="money">$8,499.35</td>
+        </tr>
+        <tr class="even">
+            <td>Sylvia Plath</td>
+            <td>The Colossus</td>
+            <td class="money"></td>
+            <td class="money">$1031.72</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+-----
+sample3
+-----
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 50px auto;
+        }
+
+        td {
+            border: 1px solid #0088dd;
+            padding: 15px;
+        }
+
+        table.one {
+            empty-cells: show;
+        }
+
+        table.two {
+            empty-cells: hide;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+-----
+sample4
+-----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 50px auto;
+        }
+
+        td {
+            background-color: #0088dd;
+            padding: 15px;
+            border: 2px solid #000000;
+        }
+
+        table.one {
+            border-spacing: 5px 15px;
+        }
+
+        /* table.two {
+            border-collapse: collapse;
+        } */
+    </style>
+</head>
+
+<body>
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+-----
+sample5
+-----
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            /* margin: 50px auto; */
+        }
+
+        td {
+            background-color: #0088dd;
+            padding: 15px;
+            border: 20px solid #000000;
+        }
+        table.two {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+-----
+sample6
+-----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input {
+            font-size: 120%;
+            color: #5a5854;
+            background-color: #f2f2f2;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            padding: 5px 5px 5px 30px;
+            background-repeat: no-repeat;
+            background-position: 8px 9px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:focus {
+            background-color: #ffffff;
+            border: 1px solid #b1e1e4;
+        }
+
+        input#email {
+            background-image: url("images/email.png");
+        }
+
+        input#twitter {
+            background-image: url("images/twitter.png");
+        }
+
+        input#web {
+            background-image: url("images/web.png");
+        }
+    </style>
+    <style>
+        input#submit {
+            color: #444444;
+            text-shadow: 0px 1px 1px #ffffff;
+            border-bottom: 2px solid #b2b2b2;
+            background-color: #b9e4e3;
+        }
+
+        input#submit:hover {
+            color: #333333;
+            border: 1px solid #a4a4a4;
+            border-top: 2px solid #b2b2b2;
+            background-color: #a0dbc4;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="submit" id="submit" value="Submit Here" />
+</body>
+
+</html>
+
