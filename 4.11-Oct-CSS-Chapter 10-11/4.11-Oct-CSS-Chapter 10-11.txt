@@ -1,0 +1,360 @@
+
+
+
+------
+sample1
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+</body>
+
+</html>
+
+------
+sample2
+------
+
+style1
+h1 {
+    color: red;
+}
+p {
+    color: darkcyan;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+</body>
+
+</html>
+
+------
+sample3
+------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* universal selector */
+        * {
+            font-family: 'Courier New';
+        }
+
+        /* type selector */
+        h1 {
+            color: red;
+        }
+
+        /* class selector */
+        .color-green {
+            color: green;
+        }
+
+        /* id selector */
+        #sub {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <h2 id="sub">Heading 2</h2>
+    <h2>Heading 2</h2>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p class="color-green">This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.</p>
+    <p>This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p class="color-green">This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. </p>
+</body>
+
+</html>
+
+------
+sample4
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* class selector */
+        .color-green {
+            color: green;
+        }
+
+        .font-18 {
+            font-size: 22px;
+        }
+
+        /* child selector */
+        .list-item>a {
+            color: orange;
+            font-size: 20px;
+        }
+
+        /* descendant Selector */
+        li a {
+            color: red;
+        }
+
+        /* Adjacent Sibling Selector */
+        .para+p {
+            color: green;
+        }
+
+        /* General Sibling Selector */
+        .para~p {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <h2 id="sub">Sub Heading 1</h2>
+    <h2>Sub Heading 2</h2>
+    <p>ThThis is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p class="color-green font-18">
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p>
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <p class="color-green">
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph.
+    </p>
+    <ul>
+        <li class="list-item">
+            <a> A Tag</a>
+            <a> A Tag</a>
+        </li>
+        <li class="list-item">
+            <a> A Tag</a>
+        </li>
+        <li class="list-item">
+            <a> A Tag</a>
+        </li>
+        <li class="list-item">
+            <a> A Tag</a>
+        </li>
+        <li class="list-item">
+            <a> A Tag</a>
+        </li>
+        <li class="list-item">
+            <span><a> A Tag</a></span>
+        </li>
+    </ul>
+    <a href="rhubarb.html">
+        Deadhead rhubarb flowers</a>
+    <a href="rhubarb.html">
+        Deadhead rhubarb flowers</a>
+    <br />
+    <p>This is paragraph1. </p>
+    <p class="para">This is paragraph2. </p>
+    <p>This is paragraph3. </p>
+    <p>This is paragraph4. </p>
+</body>
+
+</html>
+
+------
+sample5
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-family: "Courier New", monospace;
+        }
+
+        i {
+            color: red;
+        }
+
+        i {
+            color: green;
+        }
+
+        p b {
+            color: green;
+        }
+
+        b {
+            color: pink !important;
+        }
+
+        p b {
+            color: blue;
+        }
+
+
+        p.intro {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="intro">Potatoes</h1>
+    <p class="intro">There are <i>dozens</i> of different
+        <b>potato</b> varieties.</p>
+    <p>They are usually <strong>described</strong> as early, second early
+        and maincrop potatoes.</p>
+</body>
+
+</html>
+
+------
+sample6
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        p {
+            /* background-color: yellow; */
+            /* background-color: #efefef; */
+            /* background-color: rgb(255, 255, 255); */
+            /* background-color: rgba(100, 100, 100, 0.5); */
+            background-color: hsla(0, 100%, 100%, 0.5);
+            color: black;
+            /* opacity: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+        This is my paragraph. This is my paragraph.
+    </p>
+</body>
+
+</html>
