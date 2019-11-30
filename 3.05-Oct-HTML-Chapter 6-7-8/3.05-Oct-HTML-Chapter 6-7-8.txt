@@ -1,0 +1,294 @@
+
+How to collect information f XX rom visitors
+Different kinds of form controls
+New HTML5 form controls
+
+------
+sample1
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#efefef">
+        <tr bgcolor="red">
+            <th>1</th>
+            <td bgcolor="blue">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
+------
+sample2
+------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Spanning Rows</h1>
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>Sat</td>
+            <td>Sun</td>
+        </tr>
+        <tr>
+            <td>2-6</td>
+            <td rowspan="2">CNC</td>
+            <td rowspan="2">AI</td>
+        </tr>
+        <tr>
+            <td>6-10</td>
+        </tr>
+    </table>
+
+    <h1>Spanning Columns</h1>
+
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>9-1</td>
+            <td>1-4</td>
+            <td>4-6</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>Sat</td>
+            <td colspan="3">CNC</td>
+            <td>AI</td>
+        </tr>
+        <tr>
+            <td>Sun</td>
+            <td colspan="2">CNC</td>
+            <td colspan="2">AI</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+------
+sample3
+------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://www.google.com">
+
+        <input type="text" name="username" size="15" maxlength="5" />
+        <br />
+        <input type="password" name="password" maxlength="5" />
+        <br />
+        <textarea cols="20" rows="5"></textarea>
+        <br />
+        <input type="radio" value="opt1" name="q1" /> Option 1
+        <input type="radio" value="opt2" name="q1" checked /> Option 2
+        <br />
+        <input type="checkbox" value="opta" name="opt1" checked /> Option A
+        <input type="checkbox" value="optb" name="opt2" /> Option B
+        <br />
+
+        <select name="select">
+            <option value="opt1" hidden></option>
+            <option value="opt1">Option1</option>
+            <option value="opt2">Option2</option>
+            <option value="opt3">Option3</option>
+        </select>
+        <select name="select" multiple>
+            <option value="opt1">Option1</option>
+            <option value="opt2">Option2</option>
+            <option value="opt3" selected>Option3</option>
+        </select>
+
+        <br />
+        <br />
+        <input type="file" name="file" />
+        <br />
+        <br />
+
+        <button>My Button</button>
+        <br />
+        <br />
+        <input type="hidden" name="bookmark" value="lyrics" />
+
+        <input type="image" src="panacloud.png" height="100" width="100" />
+        <br />
+        <input type="submit" name="submit" value="Save" />
+    </form>
+</body>
+
+</html>
+
+------
+sample4
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        Male <input type="radio" name="m" value="male" />
+    </label>
+    <label>
+        Female <input type="radio" name="m" value="female" />
+    </label>
+
+    <br />
+    <label for="male">Male</label>
+
+    <input type="radio" id="male" name="m1" value="male" />
+
+    <label for="female">Female</label>
+
+    <input type="radio" id="female" name="m1" value="female" />
+
+</body>
+
+</html>
+
+------
+sample5
+------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <form action="https://www.google.com">
+            <label>
+                Enter Username:
+                <input type="text" name="username" required />
+            </label>
+            <br />
+            <label>
+                Enter Password:
+                <input type="password" name="password" required />
+            </label>
+            <br />
+            <input type="submit" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
+------
+sample6
+------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="date" required />
+        <br />
+        <input type="url" required placeholder="Enter url" />
+        <br />
+        <input type="email" required placeholder="Enter email" />
+        <br />
+        <input type="search" required placeholder="Enter keyword" />
+        <br />
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+
+
+------
+sample7
+------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+
+    <div>
+        <a href="https://www.google.com" /> Google </a>
+        <a href="https://www.youtube.com" /> Youtube </a>
+    </div>
+
+    <p>
+        This is <span class="blue">some text</span> which I written randomly
+    </p>
+
+    <iframe src="http://maps.google.co.uk/maps?q=moma+new+york
+	 &amp;output=embed" width="450" height="350">
+    </iframe>
+
+    <p>All Rightsa Reserved &#169;</p>
+</body>
+
+</html>
+
